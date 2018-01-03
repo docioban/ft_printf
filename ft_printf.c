@@ -312,7 +312,6 @@ int		ft_printf(const char *format, ...)
 	{
 		while (string[i] != '%' && string[i] != '\0')
 		{
-			ft_putstr_f(yellow);
 			nr += ft_putchar_f(string[i]);
 			i++;
 		}
@@ -320,7 +319,6 @@ int		ft_printf(const char *format, ...)
 		{
 			i++;
 			n = nr;
-			ft_putstr_f(white);
 			put_nr = nr;
 			nr += ft_switch(string, args, &i);
 			if (test(string, &i))

@@ -18,7 +18,6 @@ int print_s(char *str, int pref, int suf)
 		len = ft_min(len, suf);
 	while (pref > len && (pref--) - len - i > 0)
 		nr += ft_putchar_f(' ');
-	ft_putstr_f(blue_d);
 	 while (len-- > 0)
 	 	nr += ft_putchar_f(str[i++]);
 	return (nr);

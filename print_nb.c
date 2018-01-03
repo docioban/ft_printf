@@ -15,10 +15,8 @@ int print_nr_print(char *str, int pref, int suf)
 		nr += ft_putchar_f(' ');
 	if (str[0] == '-')
 		nr += ft_putchar_f('-');
-	ft_putstr_f(red);
 	while (suf > 0 && suf-- > len)
 		nr += ft_putchar_f('0');
-	ft_putstr_f(green);
 	while (len-- > 0)
 		nr += ft_putchar_f(str[i++]);
 	return (nr);
