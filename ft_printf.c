@@ -325,6 +325,5 @@ int		ft_printf(const char *format, ...)
 				i++;
 		}
 	}
-	ft_putstr_f(white);
 	return (nr);
 }
